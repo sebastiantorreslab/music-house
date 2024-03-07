@@ -1,0 +1,271 @@
+.Header-container{
+  width: 100%;
+  background-color: #fff;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index:3;
+  flex-direction: row;
+
+}
+
+.Header-container-isologo {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.Header-container-logo{
+  height: 14vh;
+  padding: 0 1vw 0 1vw;
+}
+
+.Header-container-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.Header-container-brand p{
+  height: 35px;
+  padding-bottom: 70px;
+}
+
+.Header-container-brand a {
+  color: black;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 35px;
+}
+
+.Title-bold {
+  font-weight: 700;
+  color: black;
+}
+
+.Title-semibold {
+  font-weight: 600;
+  color: black;
+}
+
+.Title-Medium {
+  font-weight: 500;
+  color: black;
+}
+
+.Title-regular {
+  font-weight: 400;
+  color: black;
+}
+
+.Title-light {
+  font-weight: 300;
+  color: black;
+  padding-right: 0.5vw;
+}
+
+.Header-container-brand h4 {
+  color: black;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 25px;
+  text-align: left;
+
+}
+
+.Header-container-buttons{
+  display: flex;
+  padding: 24px 16px;
+  gap: 16px;
+  flex-direction: row;
+
+}
+
+.Header-container-button{
+  height: 5vh;
+  width: 7vw;  
+  border-radius: 10px;  
+  border-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Header-container-buttons .button-logIn {
+  background-color: rgba(243, 146, 0, 1); 
+}
+
+.Header-container-buttons .button-signUp {
+  background-color: rgba(0,0,0, 1); 
+}
+
+.Avatar-container-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 1rem;
+}
+
+#avatar {
+  background-color: black;
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.Avatar-container-button {
+  background-color: rgba(243, 146, 0, 1);
+  height: 5vh;
+  width: 8vw;  
+  border-radius: 10px; 
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.Avatar-container-button:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.userPanel {
+  background-color: #F39200;
+  border-radius: 10px;
+  position: absolute;
+  top:11vh;
+  right:1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.10);
+}
+
+.userPanel button {
+  width: 100%;
+  
+}
+
+/** BOOKINGS LINK */
+
+.Booking-link-container-button {
+  color: rgba(243, 146, 0, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  margin-right: 2.5rem;
+  background-color: #FFF;
+  border: 0px solid black;
+  height: 5vh;
+  width: 8vw;  
+}
+
+.Booking-link-container-button:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (1625px >= width >= 701px) {
+  .Header-container-brand a {
+    font-size: 35px;
+  }
+
+  .Header-container-button{
+    width: 100px;
+  }
+
+}
+
+@media (611px <= width <=700px) {
+  .Header-container-button{
+    width: 100px;
+  }
+  .Header-container-brand a {
+    font-size: 30px;
+  }
+}
+
+@media (577px <= width <= 610px) {
+  .Header-container-button{
+    width: 90px;
+  }
+
+  .Header-container-brand a {
+    font-size: 30px;
+  }
+}
+
+
+@media (376px <= width <= 576px) {
+  .Header-container{
+    flex-direction: column;
+  }
+
+  .Header-container-buttons{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .Header-container-brand p{
+    padding-bottom: 70px;
+  }
+
+  .Header-container-buttons .button-logIn {
+    width: auto;
+  }
+
+  .Header-container-buttons .button-signUp {
+    width: auto;
+  }
+
+
+  @media (max-width: 375px) {
+
+    .Header-container{
+      height: 13vh;
+    }
+
+    .Header-container-brand  {
+      height: 13vh;
+      justify-content: center;
+    }
+
+    .Header-container-logo{
+      height: 10vh;
+      padding: 0 1vw 0 1vw;
+    }
+
+    .Header-container-brand p{
+      padding-bottom: 50px;
+    }
+
+  }
+
+  
+
+
+}
+

@@ -1,0 +1,96 @@
+/* Admin.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #F4F4F4;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.subtitle{
+    color: #4D4D4D;
+    font-size: 24px;  
+    padding-left: 38px;
+    font-weight: 700;
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 4vh;
+}
+
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    text-align: left;
+    margin-top: 2vh;
+}
+
+.nav__container__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    height: auto;
+    max-width: 100%;    
+    margin: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.10);
+}
+
+.navitem__title_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.navitem__title_container img{
+    width: 42px;
+    height: 42px;
+    margin: 16px 8px;
+}
+
+.navitem__title_info{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 8px;
+}
+
+.navitem__title_info h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.navitem__title_info p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.admin__menu_button{
+    background-color: rgba(243, 146, 0, 1);
+    padding: 8px;
+    gap: 8px;    
+    border-radius: 8px;
+    width: 120px;
+    font-weight: 700;
+}

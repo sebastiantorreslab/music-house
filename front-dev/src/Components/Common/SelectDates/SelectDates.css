@@ -1,0 +1,15 @@
+.unavailable-day {
+    color: lightgray;
+  }
+
+  .rent_button{
+    background-color: rgba(243, 146, 0, 1);
+    padding: 8px;
+    border-radius: 8px;    
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+    width: 50%;
+    cursor: pointer;
+    
+}

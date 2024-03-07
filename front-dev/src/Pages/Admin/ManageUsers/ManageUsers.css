@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style:ridge;
+    margin: 5vh 5vw 5vh 5vw;
+    color: black;
+    
+}
+
+.container p{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container p span {
+    width: 100vw;
+    font-weight: bold;
+}
+
+.navbar {
+    margin: 10vh 5vw 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#admin-search {
+    position:static;
+}
+
+.permissionsButton {
+    background-color: rgba(243,146,0);
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0px;
+    text-align: center;
+    width: 11rem;
+    height: 5vh;
+    box-shadow: 0 10px 10px #aaa;
+    cursor:pointer;
+}

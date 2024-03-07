@@ -1,0 +1,7 @@
+.main-app-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    /* width: auto; */
+}

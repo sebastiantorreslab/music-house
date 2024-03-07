@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "4409053f-f0e0-4086-8432-d0eafac00b33",
+		"name": "ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18132018",
+		"_collection_link": "https://blue-firefly-686004.postman.co/workspace/Instrument-Rental-API~830a66a8-16ea-4a9b-9db6-a4505c19e4c0/collection/18132018-4409053f-f0e0-4086-8432-d0eafac00b33?action=share&creator=18132018&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "AdminRegistry",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custDni\": \"261471\",\r\n    \"custFirsName\": \"TetsEmail\",\r\n    \"custLastName\": \"JWTFromRegistry\",\r\n    \"custEmail\": \"glwilliam.st@gmail.com\",\r\n    \"custPassword\": \"qwerty1234\",\r\n    \"custPhone\": 652145698,\r\n    \"address\": { \"custAddress\": \"calle 221 # 52\",\r\n        \"city\": { \"cityCode\": \"BOGOTA\",\r\n            \"country\": { \"countryCode\": \"COL\"} \r\n        }\r\n    }  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/registry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"registry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryRegistry",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryTitle\": \"VIENTOXY\",\r\n    \"categoryDescription\": \"Instrumentos de viento\",\r\n    \"categoryImage\": \"https://electronicos.org\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/category/registry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"category",
+						"registry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryTitle\": \"VIENTOX\",\r\n    \"categoryDescription\": \"Instrumentos de viento\",\r\n    \"categoryImage\": \"https://vientox.org\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/category/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"category",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCategoryByName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0cm9sZWFkbWluQGdtYWlsLmNvbSIsImlzcyI6Ikluc3RydW1lbnRSZW50YWwiLCJleHAiOjE2ODY1MzA3MTgsIkROSSI6Ijk1OTU5NTk1In0.SfaDDO3WN94BEjWGQWqkMeAG-4UCADiamFtcI6sP-8c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/instruments/categories/ELECTRONICOS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"instruments",
+						"categories",
+						"ELECTRONICOS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListCustomers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnbHdpbGxpYW0uc3RAZ21haWwuY29tIiwiaXNzIjoiSW5zdHJ1bWVudFJlbnRhbCIsImV4cCI6MTY4Njc5NzE4OSwiRE5JIjoiMjYxNDcxIn0.TInjCt_6ZxvOqWzMpCG3mhzURjr3kL6HcIaYJh8gdvc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/admin/customer/list?size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"customer",
+						"list"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllRentals",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0cm9sZXRpbGRlc0BnbWFpbC5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg3ODI1ODQwLCJETkkiOiI5NTk1OTU5NiJ9.04u6DYFGyvwgoq2opOSCfrw0h5bwBwUROejHqPcBKI4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/admin/rental/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"rental",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRole",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnbHdpbGxpYW0uc3RAZ21haWwuY29tIiwiaXNzIjoiSW5zdHJ1bWVudFJlbnRhbCIsImV4cCI6MTY4NzQ4Njc3NSwiRE5JIjoiMjYxNDcxIn0.UoIoNEZZMGMDhJsrvXJq4IgMcDgAVqcRQ9fH_by59xE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custDni\": \"261471\",\r\n    \"role\": \"ROLE_ADMIN\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/customer/update-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"customer",
+						"update-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomerByDni",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/admin/customer/delete/454655",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"customer",
+						"delete",
+						"454655"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InstrumentRegistry",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"instName\": \"Flauta Traversa\",\r\n    \"instBrand\": \"Los Vientos\",\r\n    \"instTagNumber\": \"666854\",\r\n    \"instAcqDate\": \"2018-01-28\",\r\n    \"instIsActive\": true,\r\n    \"category\": \"VIENTOS\",    \r\n    \"instDescription\": \"Intrumento jazzero\",\r\n    \"instPhoto\": \"http://www.google.com\",\r\n    \"instPrice\": 300.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/instrument/registry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"instrument",
+						"registry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateInstrument",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"instName\": \"Flauta Traviesa\",\r\n    \"instBrand\": \"Los Vientos\",\r\n    \"instTagNumber\": \"666854\",\r\n    \"instAcqDate\": \"2018-01-28\",\r\n    \"instIsActive\": true,\r\n    \"category\": \"VIENTOS\",    \r\n    \"instDescription\": \"Intrumento sinfonico\",\r\n    \"instPhoto\": \"http://www.google.com\",\r\n    \"instPrice\": 300.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/instrument/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"instrument",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteInstByTagNumber",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0UlUzQGRpZ2l0YWxob3VzZS5jb20iLCJpc3MiOiJJbnN0cnVtZW50UmVudGFsIiwiZXhwIjoxNjg2NjA1NzU4LCJETkkiOiI1NjE0NzcifQ.gfjnPi7S85T2ZWHRNwMyrKxzIqA6rkxf-Tb4FToM3Qo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/admin/instrument/666854",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"instrument",
+						"666854"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

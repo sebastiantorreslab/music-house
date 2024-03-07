@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: 'Inter';
+}
+
+.main {
+  min-height: calc(100vh - 15vh - 56px);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px !important;
+  }
+}
+
+

@@ -1,0 +1,49 @@
+.banner_container_front{
+    width: 100%;
+    padding: 32px 0px;
+    background-color: #000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url(../../../assets/front-user.jpg);
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.banner_container_back{
+  width: 100%;
+  background-color: #000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url(../../../assets/back-admin.jpg);
+  color: #FFFFFF;
+  text-align: left;
+ 
+}
+
+
+.banner_container_info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;    
+    font-weight: 500;
+    padding: 32px 72px;
+}
+
+h1{
+    font-size: 50px;
+    padding: 0 ;
+}
+
+h3{   
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (376px <= width <= 576px) {
+    .banner_container_front{
+        margin-top: 10%;
+    }
+  }
+  

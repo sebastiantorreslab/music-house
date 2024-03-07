@@ -1,0 +1,18 @@
+.register-form-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form-category button {
+    background-color: #f39200;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 16px;
+    margin: 32px 0px;
+    box-shadow: 0 5px 20px #aaa;
+    width: 30%;
+    cursor: pointer;
+}

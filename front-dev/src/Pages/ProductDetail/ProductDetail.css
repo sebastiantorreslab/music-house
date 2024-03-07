@@ -1,0 +1,223 @@
+.main-product-container{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 8px;
+    width: 100%;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    margin: 12px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90vw;
+}
+
+.avgRanking-container {
+    display: flex;
+    align-items: center;
+}
+
+.avgRanking-btn {
+    margin-left: 1rem;
+    background-color: rgba(243, 146, 0, 1);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    display: flex;
+
+}
+
+.avgRanking-txt {
+    margin-left: 0.5rem !important;
+    color: grey;
+
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking-btn {
+    background-color: rgba(243, 146, 0, 1);
+    color: #fff;
+    height: 7vh;
+    width: 7vw;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* ------------- Left side */
+
+/*.detail-item-image-container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.detail-item-image-container img{
+    border-radius: 12px 0px 0px 12px;
+    border-radius: 16px;
+    padding: 0;
+    margin: 0;
+}*/
+
+/* ------------- right side*/
+
+.detail-item-description-container{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+}
+
+.detail-item-text-container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ------------- Instrument title name*/
+
+.detail-item-title{
+    color: #f39200;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+/* ------------- Descriptor based on text*/
+
+.detail-item-text-container{
+    text-align: left;
+    margin: 16px 0;
+    padding: 0 0;
+}
+
+.detail-item-text-container h3{
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.detail-item-text-container p{    
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* ------------- Descriptor based on icon*/
+
+.detail-item-icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;    
+    text-align: left;
+    margin: 16px 0;    
+    width: auto; 
+}
+
+.detail-item-icon-container h3{
+    align-self: center;
+    font-weight: bold;    
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.detail-item-icon-container .check-icon{    
+    width: 24px;
+    height: 24px;
+}
+
+/* ------------ Helpers*/
+
+.active{
+    color: darkgreen;
+    fill: darkgreen;
+    
+}
+
+.inactive{
+    color: brown;
+    fill: brown;
+    
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 576px) {
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;        
+    }
+    .detail-item-image-container{
+        width: 100%;    
+        margin: auto;
+    }
+    
+    .detail-item-image-container img{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .detail-item-title{        
+        font-size: 5em;        
+        text-align: center;
+    }
+}
+
+/**++++++++++++++++*/
+
+.block-image-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: hidden;
+}
+
+.block-image-container__main{
+    width: 50vw;
+    
+}
+
+.block-image-container__main img{
+    width: 100%;
+}
+
+.block-image-container__grid{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-image-container-A, .block-image-container-B{
+    display: flex;
+    flex-direction: row;
+}
+
+.block-image-container-A img, .block-image-container-B img{
+    max-width: 50%;
+}
+

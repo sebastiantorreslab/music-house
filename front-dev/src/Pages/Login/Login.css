@@ -1,0 +1,122 @@
+.login-links {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.register-container h2,
+.login-container h2 {
+    color: black;
+    padding: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-submit {
+    background-color: rgba(243, 146, 0, 1);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 40px;
+    width: 50%;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button-register {
+    background-color: rgba(243, 146, 0, 1);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 40px;
+    width: 50%;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.register-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.form-links a {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.verify-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 2rem;
+}
+
+.verify-container svg{
+    font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    .register-container {
+        margin-top: 2vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .login-container {
+        margin-top: 2vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        margin-top: 2vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .login-container {
+        margin-top: 2vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}

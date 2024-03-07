@@ -1,0 +1,35 @@
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 24px;
+    
+}
+
+.product-card {
+    margin: 1rem;
+}
+
+.pagination nav ul li button, .pagination nav ul li div {
+    color: rgb(0, 0, 0);
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+.productsSection {
+    padding-top: 3vh;
+    position: relative;
+}
+
+.productsSection-subtitle {
+    color: #4D4D4D;
+    font-size: 24px;  
+    padding-left: 38px;
+    font-weight: 700;
+    align-self: flex-start;
+    text-align: left;
+  }
